@@ -11,7 +11,7 @@ class setUp:  #initial game set up class
     pg.init()  #initializes the pygame module
     
     #Sets the display icon to the game icon
-    icon_image = pg.image.load(r"C:\Python\Game_Dev\RPG1\icon.png")
+    icon_image = pg.image.load(r"C:\Python\Game_Dev\ParkingPanic\RPG1\icon.png")
     icon = pg.transform.scale(icon_image, (20,20))
     icon_surface = pg.Surface((20,20))
     new_icon = icon_surface.blit(icon, (0,0))
@@ -28,10 +28,10 @@ class setUp:  #initial game set up class
         clock = pg.time.Clock()  #time count for FPS
         pg.display.set_caption("Parking Panic!")  #adds a title to the game window
     
-        image_1 = pg.image.load(r"C:\Python\Game_Dev\RPG1\background_2.jpg") #loading background image
-        image_2 = pg.image.load(r"C:\Python\Game_Dev\RPG1\car_sprite.png") #loading player image
-        image_3 = pg.image.load(r"C:\Python\Game_Dev\RPG1\enemy2.png") #loading the enemy image
-        image_4 = pg.image.load(r"C:\Python\Game_Dev\RPG1\end_goal2.png") #loading the end goal image
+        image_1 = pg.image.load(r"C:\Python\Game_Dev\ParkingPanic\RPG1\background_2.jpg") #loading background image
+        image_2 = pg.image.load(r"C:\Python\Game_Dev\ParkingPanic\RPG1\car_sprite.png") #loading player image
+        image_3 = pg.image.load(r"C:\Python\Game_Dev\ParkingPanic\RPG1\enemy2.png") #loading the enemy image
+        image_4 = pg.image.load(r"C:\Python\Game_Dev\ParkingPanic\RPG1\end_goal2.png") #loading the end goal image
         background = pg.transform.scale(image_1,(self.width,self.height)) #scaling the background image to the game window
         enemy_image = pg.transform.scale(image_3, (int(self.width*0.08),int(self.height*0.08))) #scaling the enemy image
         enemy_image_2 = pg.transform.scale(image_3, (int(self.width*0.06),int(self.height*0.06))) #scaling the enemy image
